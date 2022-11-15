@@ -14,11 +14,8 @@
                       (<=  Start Start)
                       (=   Start Start)
                       (>=  Start Start)))))
-(declare-var x0 Int)
-(declare-var x1 Int)
 
 
-(constraint (= (f 1 1) 2))
-(constraint (= (f 0 1) 1))
+(constraint (and (= (f 1 1) 2) (= (f 0 1) 1)))
 
 (check-synth)
