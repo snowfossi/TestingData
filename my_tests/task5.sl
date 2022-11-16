@@ -19,8 +19,7 @@
 
 (constraint (= (f 10 12 18) 72))
 (constraint (= (f 3 -3 26) 104))
-(constraint (= (f 24 4 24) 96))
-(constraint (=> (= (f 10 12 18) 72) (= (f 3 -3 26) 104) (= (f 24 4 24) 96)))
+(constraint (=> (= (f 10 12 18) 72) (= (f 3 -3 26) 104)))
 
 (check-synth)
 

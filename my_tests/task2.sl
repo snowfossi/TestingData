@@ -19,8 +19,7 @@
 
 (constraint (= (f 22 6 11) 31))
 (constraint (= (f 8 26 20) 40))
-(constraint (= (f 26 20 1) 21))
-(constraint (=> (= (f 22 6 11) 31) (= (f 8 26 20) 40) (= (f 26 20 1) 21)))
+(constraint (=> (= (f 22 6 11) 31) (= (f 8 26 20) 40)))
 
 (check-synth)
 

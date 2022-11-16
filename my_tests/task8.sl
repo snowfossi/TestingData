@@ -17,8 +17,7 @@
 
 (constraint (= (f 26) -10))
 (constraint (= (f 17) -1))
-(constraint (= (f 15) 1))
-(constraint (=> (= (f 26) -10) (= (f 17) -1) (= (f 15) 1)))
+(constraint (=> (= (f 26) -10) (= (f 17) -1)))
 
 (check-synth)
 
