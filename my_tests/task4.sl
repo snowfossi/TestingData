@@ -16,9 +16,10 @@
                       (>=  Start Start)))))
 
 
-(constraint (= (f 2 2) 4))
-(constraint (= (f 3 5) 15))
-(constraint (=> (= (f 2 2) 4) (= (f 3 5) 15)))
+(constraint (= (f 28 -5) 1))
+(constraint (= (f 3 -4) 2))
+(constraint (= (f 17 11) 17))
+(constraint (=> (= (f 28 -5) 1) (= (f 3 -4) 2) (= (f 17 11) 17)))
 
 (check-synth)
 

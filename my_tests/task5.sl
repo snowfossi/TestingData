@@ -1,8 +1,9 @@
 (set-logic LIA)
 
-(synth-fun f ((a0 Int) (a1 Int)) Int
+(synth-fun f ((a0 Int) (a1 Int) (a2 Int)) Int
     ((Start Int (a0
 		 a1
+		 a2
                  0
                  1
                  (+ Start Start)
@@ -16,9 +17,10 @@
                       (>=  Start Start)))))
 
 
-(constraint (= (f 2 2) 4))
-(constraint (= (f 3 5) 15))
-(constraint (=> (= (f 2 2) 4) (= (f 3 5) 15)))
+(constraint (= (f 10 12 18) 72))
+(constraint (= (f 3 -3 26) 104))
+(constraint (= (f 24 4 24) 96))
+(constraint (=> (= (f 10 12 18) 72) (= (f 3 -3 26) 104) (= (f 24 4 24) 96)))
 
 (check-synth)
 
