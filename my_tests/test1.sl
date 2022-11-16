@@ -19,6 +19,6 @@
 (declare-var x1 Int)
 
 
-(constraint (and (= (f 1 1) 2) (= (f 0 1) 1)))
+(constraint (= (f 1 0) 1))
 
 (check-synth)
